@@ -1,0 +1,207 @@
+/*Custum Color */
+@import  'utilities.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#eeeaea;
+    --secondary:#070606;
+
+    
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* "*" for all */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+
+}
+/* class for navigator */
+.container{
+    max-width: 1152px;
+    padding:0 15px; 
+    margin: 0 auto;
+
+}
+/* header to dark */
+header{
+    background: black;
+    clip-path:circle(180vh at 50% -81vh);
+}
+/*left side editing in  navigator*/
+header nav .left a{
+    color :var(--pure);
+    text-decoration: none; 
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color:var(--primary);
+}
+header nav{
+    padding: 2rem 0 ;
+}
+header nav .branding {
+    margin-right:3rem;
+    
+}
+.hero{
+    padding: 3rem 0;
+}
+.hero img{
+    width: 600px;
+    margin-right: 1rem;
+}
+.hero .right{
+    color: white;
+}
+.hero .right h6{
+        font-size: 1.6rem;
+        color: var(--primary);
+        margin-bottom: 0.5rem;
+
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+
+}
+.hero .right h1 span{
+    color:var(--primary);
+
+}
+
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2;
+
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+section{
+    padding: 6rem 0;
+}
+ 
+.about .meimage{
+    
+    margin-right: -1rem;
+    height: 600px;
+     
+  }
+.about h1{
+    margin: 1rem;
+    font-size: 2rem;
+    
+}
+.about h1 span{
+    color: var(--primary);
+}
+.about h2{
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+.about   h2 span{
+    color: var(--primary);
+    position: relative;
+}
+.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+ 
+section.about p{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    font-size: 12px;
+    margin-bottom: 2rem;
+}
+section.about .social{
+display: flex;
+background: var(--dark);
+display: flex;
+align-items: center;
+justify-content: center;
+width: 35px;
+height: 35px;
+border-radius: 50%;
+margin-right: 0.6rem;
+transition: all .3sec ease;
+ 
+}
+.about .social a img{
+    width: 100%;
+height: 100%;
+padding :0.5rem;
+}
+.about .social:hover{
+    background: var(--primary);
+}
+.section-heading{
+    color:var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+    margin-bottom: 5rem;
+
+}
+.section-heading span{
+    color: var(--primary);
+}
+section.skills {
+    background:var(--light);
+}
+section.skills .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-column-gap :2rem ;
+    grid-row-gap :5rem;
+
+}
+section.skills .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 6rem ;
+    text-align: center;
+    transition: all .4s ease;
+
+}
+section.skills .card img{
+    position: absolute;
+    top:-3.5rem;
+    left:50%;
+    transform: translateX(-46%);
+
+
+}
+section.skills .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+section.skills .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6rem;
+}
+section.skills .card:hover{
+    background: var(--dark);
+}
+section.skills .card:hover h2,section.skills .card:hover p{
+    color:var(--pure);
+}
