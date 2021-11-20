@@ -205,3 +205,71 @@ section.skills .card:hover{
 section.skills .card:hover h2,section.skills .card:hover p{
     color:var(--pure);
 }
+section.freelance{
+    text-align: center;
+    /* image with same darkness  */
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/camera.png);
+    color: var(--pure)  ;
+  clip-path: inset(20px 20px 50px round 15px 0);
+  padding-bottom:5rem;
+}
+section.freelance h1{
+ font-size: 2rem;
+ margin-bottom: 0.5rem;
+
+}
+section.reviews  .slider .slide img{
+    height: 150px;
+    width: 150px;
+    padding-bottom: 0.5rem;
+    clip-path:circle();
+    object-fit: cover;
+    margin-bottom: 2rem;
+
+}
+
+section.reviews  .slider .slide {
+    text-align: center;
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    padding: 0 6rem;
+}
+
+section.reviews  .slider .slide p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    margin-bottom: 1rem;
+}
+
+section.reviews  .slider .slide span{
+    font-size: 0.8rem;
+
+}
+
+section.reviews  .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;/*froce fullly change in some script*/
+    justify-content: center;
+}
+
+section.reviews  .slider-dots{
+    margin-top: 3rem;
+}
+section.reviews  .slider-dots button{
+    font-size:0;
+    width: 6px;
+    height: 5px;
+     border-radius: 50px;
+    margin-right:0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    cursor: pointer;
+
+
+}
+section.reviews  .slider-dots .dots li.slick-active button{
+    background: var(--primary);
+    width: 18px;    
+}
