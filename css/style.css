@@ -144,13 +144,16 @@ margin-right: 0.6rem;
 transition: all .3sec ease;
  
 }
-.about .social a img{
-    width: 100%;
-height: 100%;
+section.about .social img {
+    width: 45px;
+height: 45px;
 padding :0.5rem;
+margin-right: 0.5rem;
+background: var(--pure);
 }
-.about .social:hover{
-    background: var(--primary);
+section.about .social img:hover{
+    background-color: var(--primary);
+    border-radius: 50%;
 }
 .section-heading{
     color:var(--secondary);
@@ -187,6 +190,8 @@ section.skills .card img{
     top:-3.5rem;
     left:50%;
     transform: translateX(-46%);
+    height: 100px;
+    width: 100px;
 
 
 }
@@ -285,10 +290,17 @@ section.work .card-wrapper {
     grid-gap: 2rem;
     margin-left: 3rem;
 }
+
 section.work .card-wrapper .card{
     position: relative;
     height: 250px;
 
+
+}
+section.work .card-wrapper img{
+    height: 100%;
+width: 84%; 
+ 
 
 }
 section.work .card .overlay{
@@ -315,7 +327,7 @@ text-decoration: none;
 section.work .card img{
     height: 100%;
     font-weight: 100%;
-
+    object-fit: cover; 
 }
 section.work .card:hover .overlay{
     opacity: 1;
@@ -337,6 +349,10 @@ section.contact .card h6{
     font-size: 1rem;
     font-weight: 400;
     color: var(--ternary);
+}
+section.contact .card img{
+    height: 100px;
+    width: 100px;
 }
 section.contact .input-wrap{
     display: grid;
@@ -374,16 +390,21 @@ footer.footer{
     background: var(--dark);
     text-align: center;
     padding :3rem 0;
+    
 
 }
 footer.footer .social img{
     width: 100%;
     height: 100%;
     padding :0.5rem;
+
+  
+
+   
 }
 footer.footer .social{
     display: flex;
-background: var(--dark);
+background: var(--pure);
 display: flex;
 align-items: center;
 justify-content: center;
@@ -394,8 +415,9 @@ margin-right: 0.6rem;
 transition: all .3sec ease;
 margin-bottom: 1rem ;
 }
-footer.footer .social:hover{
+footer.footer .social img:hover{
     background: var(--primary);
+    border-radius: 50%;
 }
 footer.footer .text{
     color: var(--ternary);
